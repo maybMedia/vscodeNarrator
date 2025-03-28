@@ -32,6 +32,24 @@
           "type": "boolean",
           "default": false,
           "description": "Enable voices that narrate your code!"
+        },
+        "vscodeNarrator.VoiceSelected": {
+          "type": "string",
+          "default": "Maverick",
+          "description": "Select a voice to use",
+          "enum": [
+            "Maverick",
+            "Grandpa",
+            "Lutz",
+            "Cowboy Bob",
+            "Flicker",
+            "Flicker Mean",
+            "Demon",
+            "James",
+            "Serafina",
+            "Cooper",
+            "Braith"
+          ]
         }
       }
     }
