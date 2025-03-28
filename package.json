@@ -19,7 +19,40 @@
         "command": "vscodenarrator.StartNarrator",
         "title": "Activate Narrator"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "vsCode Narrator",
+      "properties": {
+        "vscodeNarrator.EnableDonk": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable donk when you write errors!"
+        },
+        "vscodeNarrator.EnableVoices": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enable voices that narrate your code!"
+        },
+        "vscodeNarrator.VoiceSelected": {
+          "type": "string",
+          "default": "Maverick",
+          "description": "Select a voice to use",
+          "enum": [
+            "Maverick",
+            "Grandpa",
+            "Lutz",
+            "Cowboy Bob",
+            "Flicker",
+            "Flicker Mean",
+            "Demon",
+            "James",
+            "Serafina",
+            "Cooper",
+            "Braith"
+          ]
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
