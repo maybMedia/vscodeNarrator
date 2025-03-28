@@ -1,8 +1,11 @@
 {
   "name": "vscodenarrator",
-  "displayName": "vscodeNarrator",
+  "displayName": "vscode Narrator",
   "description": "A friendly voice to echo your thoughts as you code",
-  "version": "0.0.1",
+  "icon": "./logo.jpeg",
+  "repository": {"url": "https://github.com/maybMedia/vscodeNarrator"},
+  "version": "1.0.0",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.98.0"
   },
@@ -43,7 +46,6 @@
             "Lutz",
             "Cowboy Bob",
             "Flicker",
-            "Flicker Mean",
             "Demon",
             "James",
             "Serafina",
@@ -80,7 +82,6 @@
     "node-wav": "^0.0.2",
     "play-sound": "^1.1.6",
     "speaker": "^0.5.5",
-    "wav": "^1.0.2",
-    "web-audio-api": "^0.2.2"
+    "wav": "^1.0.2"
   }
 }
