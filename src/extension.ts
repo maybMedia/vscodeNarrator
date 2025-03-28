@@ -11,10 +11,35 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.window.showInformationMessage('vscodeNarrator is now running!');
     });
 
+    function getConfiguration() {
+        const config = vscode.workspace.getConfiguration('vscodeNarrator');
+        return {
+            EnableDonk: config.get<boolean>('EnableDonk', true),
+            EnableVoices: config.get<boolean>('EnableVoices', false) 
+        };
+    }
+
+    context.subscriptions.push(
+        vscode.workspace.onDidChangeConfiguration(event => {
+            if (event.affectsConfiguration('vscodeNarrator')) {
+                const config = getConfiguration();
+                vscode.window.showInformationMessage('Extension settings updated!');
+            }
+        })
+    );
+
     // Track files and their error lines with specific error messages
     const errorSoundPlayedLines = new Map<string, Map<number, Set<string>>>();
 
     function playErrorAudio(uri: vscode.Uri, line: number, errorMessage: string) {
+
+        const config = getConfiguration();
+        
+        if (!config.EnableDonk)
+        {
+            return;
+        }
+
         const filePath = uri.fsPath;
         
         // Initialize the map for this file if it doesn't exist
