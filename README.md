@@ -24,4 +24,5 @@ Initial release
 ### 1.1.0
 
 - Add disable command
-- Fixed some docs
+- Add restart command
+- Updated readme
