@@ -4,8 +4,10 @@
   "description": "A friendly voice to echo your thoughts as you code",
   "icon": "./logo.jpeg",
   "publisher": "maybMedia",
-  "repository": {"url": "https://github.com/maybMedia/vscodeNarrator"},
-  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/maybMedia/vscodeNarrator"
+  },
+  "version": "1.1.0",
   "license": "MIT",
   "engines": {
     "vscode": "^1.98.0"
