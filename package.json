@@ -3,6 +3,7 @@
   "displayName": "vscode Narrator",
   "description": "A friendly voice to echo your thoughts as you code",
   "icon": "./logo.jpeg",
+  "publisher": "maybMedia",
   "repository": {"url": "https://github.com/maybMedia/vscodeNarrator"},
   "version": "1.0.0",
   "license": "MIT",
@@ -12,15 +13,21 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [
-    "onCommand:vscodeNarrator.StartNarrator"
-  ],
+  "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
         "command": "vscodenarrator.StartNarrator",
-        "title": "Activate Narrator"
+        "title": "Start Narrator"
+      },
+      {
+        "command": "vscodenarrator.StopNarrator",
+        "title": "Stop Narrator"
+      },
+      {
+        "command": "vscodenarrator.RestartNarrator",
+        "title": "Restart Narrator"
       }
     ],
     "configuration": {
