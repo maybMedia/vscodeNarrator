@@ -2,8 +2,12 @@
 
 All notable changes to the "vscodenarrator" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
 ## [Unreleased]
 
 - Initial release
+
+## [1.1.0]
+
+- Add disable command
+- Add restart command
+- Updated readme
